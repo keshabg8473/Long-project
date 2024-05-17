@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+ font-family: 'DM Sans', sans-serif;
+ font-weight: 100;
+ line-height: 1.4;
+ scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+}
+header{
+    border: 1px solid #ccc;
+    height: 100vh;
+    position: fixed;
+}
+
+nav h1{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+nav ul li{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    color: black;
+}
+nav ul li:hover{
+   background: #ccc;
+   transition: 0.3s ease-in-out;
+}
+/* main section  */
+  main{
+    padding: 50px;
+    max-width: 1200px;
+    margin-left: 282px;
+    }
+  section{
+    margin-bottom: 50px;
+   padding-top: 15px;
+  }
+  section article{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section h2{
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+  }
+  section article ul{
+    margin-left: 30px;
+
+  }
+  section article li{
+     margin-bottom: 10px;
+  }
+  code{
+    white-space: pre-line;
+    line-height: 2;
+    background: #f3efef;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  @media(max-width:480px)
+  {
+    body{
+        flex-direction: column;
+        position: relative;
+    }
+    header{
+        height: 200px;
+        overflow: hidden;
+        overflow-y:scroll ;
+    }
+  }
+
